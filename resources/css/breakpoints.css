@@ -6,6 +6,9 @@
 
 
 @media only screen and (max-width: 720px) {
+    .pepsi {
+        text-align: center;
+    }
     .pepsi:hover .rectangle {
         width: 350px;
         height: 650px;
