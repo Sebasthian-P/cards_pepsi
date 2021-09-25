@@ -1,0 +1,19 @@
+@media only screen and (max-width: 1250px) {
+    .container {
+        flex-direction: column;
+    }
+}
+
+
+@media only screen and (max-width: 720px) {
+    .pepsi:hover .rectangle {
+        width: 350px;
+        height: 650px;
+        padding: 50px 30px;
+    }
+
+    .pepsi:hover img {
+        height: 450px;
+        transform: translateY(250px);
+    }
+}

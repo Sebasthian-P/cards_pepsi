@@ -1,0 +1,116 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    min-height: 100vh;
+    padding: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.pepsi {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 100px 0px;
+}
+
+.pepsi img {
+    position: absolute;
+    height: 300px;
+    transition: height 450ms, transform 300ms;
+    z-index: 100;
+    filter: drop-shadow(5px 5px 4px rgba(0, 0, 0, 0.5));
+}
+
+.rectangle {
+    width: 250px;
+    height: 250px;
+    font-size: 20px;
+    border-radius: 100%;
+    transition: width .3s, background-color 300ms, border-radius 300ms, height 300ms, padding 300ms;
+}
+
+.rectangle h1,
+.rectangle p,
+.rectangle .btn {
+    opacity: 0;
+    transition: 300ms;
+    color: #fff;
+}
+
+.rectangle h1 {
+    font-size: 1.5em;
+}
+
+.rectangle p {
+    margin: 30px 0;
+    font-size: 1em;
+    text-align: justify;
+    font-weight: 300;
+}
+
+.rectangle .btn {
+    width: 100px;
+    height: 50px;
+    padding: 10px;
+    background-color: #fff;
+    color: #000;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.pepsi:hover .rectangle {
+    width: 650px;
+    height: 350px;
+    padding: 50px 30px 50px 320px;
+    border-radius: 20px;
+}
+
+.pepsi:hover img {
+    height: 450px;
+    transform: translateX(-160px);
+}
+
+.pepsi:hover h1,
+.pepsi:hover p,
+.pepsi:hover .btn {
+    opacity: 1;
+}
+
+/* Pepsi 1 */
+
+.container :nth-child(1) .rectangle {
+    background-color: #d3272e;
+}
+
+.container :nth-child(1):hover .rectangle {
+    background-color: #1a1c1e;
+}
+
+
+/* Pepsi 2 */
+
+.container :nth-child(2) .rectangle {
+    background-color: #1b568d;
+}
+
+.container :nth-child(2):hover .rectangle {
+    background-color: #cda944;
+}
+
+/* Pepsi 3 */
+
+.container :nth-child(3) .rectangle {
+    background-color: #ef8826;
+}
+
+.container :nth-child(3):hover .rectangle {
+    background-color: #1b568d;
+}
