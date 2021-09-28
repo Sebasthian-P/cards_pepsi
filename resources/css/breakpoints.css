@@ -7,8 +7,8 @@
 
 @media only screen and (max-width: 720px) {
 
-    .pepsi {
-        text-align: center;
+    .pepsi .rectangle .btn {
+        display: none;
     }
 
     .pepsi .rectangle .title,
@@ -19,44 +19,52 @@
     .pepsi:hover .rectangle {
         width: 350px;
         height: 400px;
-        padding: 50px 30px;
     }
 
-    .pepsi:active img {
+    .pepsi:active #figure_pepsi {
         filter: drop-shadow(0px 0px 4px rgba(255, 255, 255, 0.5));
-    }
-
-    .pepsi:hover img {
-        height: 300px;
-        transform: translateY(140px);
     }
 
     .rectangle {
         flex-direction: column;
+        padding: 30px;
     }
 
-    .container .pepsi:active .rectangle {
+    .container .pepsi:hover .rectangle {
         height: 500px;
     }
 
-    .container .pepsi:active img{
-        transform: translateY(-70px);
+    .container .pepsi:hover #figure_pepsi{
+        transform: translateY(-65px);
         height: 150px;
     }
 
-    .container .pepsi:active .rectangle .title {
-    transform: translateY(0px);
-    opacity: 1;
-    font-size: .7em;
+    .container .pepsi .rectangle .title h1{
+        font-size: 2em;
     }
 
-    .container .pepsi:active .rectangle .description {
-    transform: translateY(110px);
-    opacity: 1;
+    .container .pepsi:hover .rectangle .title {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+
+    .container .pepsi:hover .rectangle .description {
+        transform: translateY(60px);
+        padding: 0;
+        opacity: 1;
     }
 
     .rectangle .description {
         transform: translateX(0px);
         order: 10;
+    }
+
+    .pepsi .rectangle #logo {
+        top: 435px;
+        transform: translateX(-105px);
+    }
+
+    .pepsi:active .rectangle #logo {
+        transform: translateX(-110px);
     }
 }
